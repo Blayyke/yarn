@@ -222,7 +222,7 @@ task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	//TODO: Don't hardcode me to just 1.2.5 Intermediaries
-	def url = "https://gist.githubusercontent.com/Chocohead/b7ea04058776495a93ed2d13f34d697a/raw/bef98dbb28979eba29df67d4182fb8cf291d55f2/1.2.5 Merge.tiny"
+	def url = "https://gist.githubusercontent.com/Chocohead/b7ea04058776495a93ed2d13f34d697a/raw/1.2.5 Merge.tiny"
 	src url.replaceAll(" ", "%20")
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
