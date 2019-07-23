@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_36 net/minecraft/client/render/entity/EntityRenderDispatcher
+	FIELD field_1033 instance Lnet/minecraft/class_36;
+	FIELD field_1037 textureManager Lnet/minecraft/class_18;
+	FIELD field_1039 world Lnet/minecraft/class_26;
+	FIELD field_1043 options Lnet/minecraft/class_271;
+	FIELD field_1047 renderers Ljava/util/Map;
+	FIELD field_1048 font Lnet/minecraft/class_23;

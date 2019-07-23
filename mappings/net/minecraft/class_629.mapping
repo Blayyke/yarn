@@ -1,3 +1,3 @@
 CLASS net/minecraft/class_629
-	METHOD method_1532 renderLabel (Lnet/minecraft/class_133;Ljava/lang/String;DDDI)V
 	METHOD method_1524 render (Lnet/minecraft/class_133;IF)I
+	METHOD method_1532 renderLabel (Lnet/minecraft/class_133;Ljava/lang/String;DDDI)V
