@@ -25,6 +25,7 @@ CLASS net/minecraft/class_38 net/minecraft/block/Block
 	FIELD field_3729 TALL_GRASS Lnet/minecraft/class_886;
 	FIELD field_3730 DEAD_BUSH Lnet/minecraft/class_691;
 	FIELD field_3731 PISTON Lnet/minecraft/class_38;
+	FIELD field_3732 rawName Ljava/lang/String;
 	FIELD field_3733 FARMLAND Lnet/minecraft/class_38;
 	FIELD field_3734 FURNACE Lnet/minecraft/class_38;
 	FIELD field_3735 FURNACE_LIT Lnet/minecraft/class_38;
@@ -37,7 +38,6 @@ CLASS net/minecraft/class_38 net/minecraft/block/Block
 	FIELD field_3742 LEVER Lnet/minecraft/class_38;
 	FIELD field_3743 STONE_PRESSURE_PLATE Lnet/minecraft/class_38;
 	FIELD field_3744 IRON_DOOR Lnet/minecraft/class_38;
-	FIELD field_3732 rawName Ljava/lang/String;
 	FIELD field_3745 WOODEN_PRESSURE_PLATE Lnet/minecraft/class_38;
 	FIELD field_3746 REDSTONE_ORE Lnet/minecraft/class_38;
 	FIELD field_3747 REDSTONE_ORE_LIT Lnet/minecraft/class_38;
@@ -141,35 +141,37 @@ CLASS net/minecraft/class_38 net/minecraft/block/Block
 	FIELD field_3864 BEDROCK Lnet/minecraft/class_38;
 	METHOD <init> (ILacn;)V
 		ARG 1 id
-	METHOD method_3108 isFullOpaque ()Z
-	METHOD method_3095 getDropId (ILjava/util/Random;I)I
-	METHOD method_3057 setRawName (Ljava/lang/String;)Lnet/minecraft/class_38;
-	METHOD method_3096 getDropCount (Ljava/util/Random;)I
+	METHOD <init> (ILnet/minecraft/class_56;)V
+		ARG 1 id
+	METHOD method_3031 randomDisplayTick (Lnet/minecraft/class_26;IIILjava/util/Random;)V
+	METHOD method_3036 activate (Lnet/minecraft/class_26;IIILnet/minecraft/class_75;)Z
+	METHOD method_3040 isFullCube ()Z
+	METHOD method_3047 onBlockRemoved (Lnet/minecraft/class_26;III)V
+	METHOD method_3050 emitsRedstonePower ()Z
+	METHOD method_3051 getCollisionShape (Lnet/minecraft/class_26;III)Lnet/minecraft/class_39;
+	METHOD method_3052 onPlaced (Lnet/minecraft/class_26;IIII)V
 	METHOD method_3053 getEffectiveExplosionResistance (Lnet/minecraft/class_37;)F
+	METHOD method_3057 setRawName (Ljava/lang/String;)Lnet/minecraft/class_38;
 	METHOD method_3058 sounds (Lnet/minecraft/class_579;)Lnet/minecraft/class_38;
-	METHOD method_3099 beforeDestroyedByExplosion (Lnet/minecraft/class_26;IIIIFI)V
+	METHOD method_3069 canSuffocateIn (I)Z
+		ARG 0 id
+	METHOD method_3074 hasBlockEntity ()Z
+	METHOD method_3075 getTranslatedName ()Ljava/lang/String;
+	METHOD method_3076 getRawName ()Ljava/lang/String;
+	METHOD method_3081 getTickrate ()I
+	METHOD method_3086 getDropData (I)I
 	METHOD method_3088 afterPlaced (Lnet/minecraft/class_26;IIILnet/minecraft/class_133;)V
+	METHOD method_3089 onBlockAction (Lnet/minecraft/class_26;IIIII)V
+	METHOD method_3093 getOutlineShape (Lnet/minecraft/class_26;III)Lnet/minecraft/class_39;
+	METHOD method_3095 getDropId (ILjava/util/Random;I)I
+	METHOD method_3096 getDropCount (Ljava/util/Random;)I
 	METHOD method_3097 onScheduledTick (Lnet/minecraft/class_26;IIILjava/util/Random;)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_3099 beforeDestroyedByExplosion (Lnet/minecraft/class_26;IIIIFI)V
+	METHOD method_3100 canPlaceAt (Lnet/minecraft/class_26;III)Z
+	METHOD method_3101 onDestroyedByExplosion (Lnet/minecraft/class_26;III)V
 	METHOD method_3103 onEntityCollision (Lnet/minecraft/class_26;IIILnet/minecraft/class_37;)V
 	METHOD method_3106 afterBreak (Lnet/minecraft/class_26;Lnet/minecraft/class_75;IIII)V
-	METHOD method_3040 isFullCube ()Z
-	METHOD method_3101 onDestroyedByExplosion (Lnet/minecraft/class_26;III)V
-	METHOD method_3089 onBlockAction (Lnet/minecraft/class_26;IIIII)V
-	METHOD method_3031 randomDisplayTick (Lnet/minecraft/class_26;IIILjava/util/Random;)V
-	METHOD method_3036 activate (Lnet/minecraft/class_26;IIILnet/minecraft/class_75;)Z
-	METHOD method_3047 onBlockRemoved (Lnet/minecraft/class_26;III)V
-	METHOD method_3086 getDropData (I)I
-	METHOD method_3051 getCollisionShape (Lnet/minecraft/class_26;III)Lnet/minecraft/class_39;
-	METHOD method_3052 onPlaced (Lnet/minecraft/class_26;IIII)V
-	METHOD method_3093 getOutlineShape (Lnet/minecraft/class_26;III)Lnet/minecraft/class_39;
-	METHOD method_3081 getTickrate ()I
-	METHOD method_3050 emitsRedstonePower ()Z
-	METHOD method_3069 canSuffocateIn (I)Z
-		ARG 0 id
-	METHOD method_3100 canPlaceAt (Lnet/minecraft/class_26;III)Z
-	METHOD method_3074 hasBlockEntity ()Z
-	METHOD method_3075 getTranslatedName ()Ljava/lang/String;
-	METHOD method_3076 getRawName ()Ljava/lang/String;
+	METHOD method_3108 isFullOpaque ()Z

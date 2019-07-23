@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_195
+	METHOD <init> (Lnet/minecraft/class_192;Lnet/minecraft/class_637;II)V
+		ARG 4 difficulty
 	METHOD method_2291 addEntity (ILnet/minecraft/class_37;)V

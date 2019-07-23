@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_212 net/minecraft/entity/mob/OcelotMob
+	METHOD method_1225 setCatType (I)V
+		ARG 1 type
+	METHOD method_1226 getCatType ()I

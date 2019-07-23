@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_186 net/minecraft/container/Container
 	FIELD field_1622 slots Ljava/util/List;
-	METHOD method_1319 transferSlot (I)Lnet/minecraft/class_24;
 	METHOD method_1305 insertItem (Lnet/minecraft/class_24;IIZ)Z
-	METHOD method_1320 onContentsChanged (Lnet/minecraft/class_125;)V
 	METHOD method_1306 addSlot (Lnet/minecraft/class_560;)V
-	METHOD method_1321 onClosed (Lnet/minecraft/class_75;)V
 	METHOD method_1310 getSlot (I)Lnet/minecraft/class_560;
+		ARG 1 slotIndex
+	METHOD method_1319 transferSlot (I)Lnet/minecraft/class_24;
+		ARG 1 slotIndex
+	METHOD method_1320 onContentsChanged (Lnet/minecraft/class_125;)V
+	METHOD method_1321 onClosed (Lnet/minecraft/class_75;)V
+		ARG 1 player
 	METHOD method_1322 canUse (Lnet/minecraft/class_75;)Z
+		ARG 1 player

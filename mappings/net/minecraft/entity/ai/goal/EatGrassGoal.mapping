@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_538 net/minecraft/entity/ai/goal/EatGrassGoal
+	FIELD field_2787 world Lnet/minecraft/class_26;
+	METHOD method_2259 getTimer ()I

@@ -33,48 +33,43 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	FIELD field_3567 prevPitch F
 	FIELD field_3568 boundingBox Lnet/minecraft/class_39;
 	FIELD field_3569 onGround Z
-	METHOD method_2796 remove ()V
-	METHOD method_2856 baseTick ()V
-	METHOD method_2806 setOnFireFromLava ()V
-	METHOD method_2807 extinguish ()V
-	METHOD method_2857 destroy ()V
-	METHOD method_2808 isImmuneToFire ()Z
-	METHOD method_2858 getStandingEyeHeight ()F
-	METHOD method_2851 tick ()V
-	METHOD method_2810 scheduleVelocityUpdate ()V
-	METHOD method_2859 isAlive ()Z
-	METHOD method_2790 isInsideWall ()Z
-	METHOD method_2789 getHeightOffset ()D
-	METHOD method_2815 isSprinting ()Z
-	METHOD method_2818 getParts ()[Lnet/minecraft/class_37;
-	METHOD method_2862 handleStatus (B)V
-	METHOD method_2870 setVelocity (DDD)V
-	METHOD method_2872 getBrightnessAtEyes (F)F
-	METHOD method_2864 setSize (FF)V
-	METHOD method_2819 movementInputToVelocity (FFF)V
-	METHOD method_2775 burn (I)V
-	METHOD method_2820 dropItem (IIF)Lnet/minecraft/class_22;
-		ARG 1 itemId
+	METHOD method_2772 onPlayerCollision (Lnet/minecraft/class_75;)V
 	METHOD method_2773 playStepSound (IIII)V
-	METHOD method_2822 dropStack (Lnet/minecraft/class_24;F)Lnet/minecraft/class_22;
-	METHOD method_2823 isInFluid (Lnet/minecraft/class_56;)Z
-	METHOD method_2852 readCustomDataFromTag (Lnet/minecraft/class_209;)V
-	METHOD method_2788 onStruckByLightning (Lnet/minecraft/class_254;)V
+	METHOD method_2775 burn (I)V
+	METHOD method_2777 canPlayerAttack ()Z
+	METHOD method_2778 resetFallDistance ()V
 	METHOD method_2780 damage (Lnet/minecraft/class_162;I)Z
 	METHOD method_2782 isPartOf (Lnet/minecraft/class_37;)Z
-	METHOD method_2792 onKilledOther (Lnet/minecraft/class_37;I)V
+	METHOD method_2783 updatePassengerPosition ()V
 	METHOD method_2785 setWorld (Lnet/minecraft/class_26;)V
-	METHOD method_2772 onPlayerCollision (Lnet/minecraft/class_75;)V
+	METHOD method_2786 startRiding (Lnet/minecraft/class_37;)V
+	METHOD method_2788 onStruckByLightning (Lnet/minecraft/class_254;)V
+	METHOD method_2789 getHeightOffset ()D
+	METHOD method_2790 isInsideWall ()Z
+	METHOD method_2792 onKilledOther (Lnet/minecraft/class_37;I)V
+	METHOD method_2794 move (DDD)V
+	METHOD method_2795 addVelocity (DDD)V
+	METHOD method_2796 remove ()V
+	METHOD method_2797 initDataTracker ()V
+	METHOD method_2801 canClimb ()Z
+	METHOD method_2804 collides ()Z
+	METHOD method_2805 getMountedHeightOffset ()D
+	METHOD method_2806 setOnFireFromLava ()V
+	METHOD method_2807 extinguish ()V
+	METHOD method_2808 isImmuneToFire ()Z
+	METHOD method_2810 scheduleVelocityUpdate ()V
+	METHOD method_2815 isSprinting ()Z
+	METHOD method_2818 getParts ()[Lnet/minecraft/class_37;
+	METHOD method_2819 movementInputToVelocity (FFF)V
+	METHOD method_2820 dropItem (IIF)Lnet/minecraft/class_22;
+		ARG 1 itemId
+	METHOD method_2822 dropStack (Lnet/minecraft/class_24;F)Lnet/minecraft/class_22;
+	METHOD method_2823 isInFluid (Lnet/minecraft/class_56;)Z
 	METHOD method_2824 createList ([D)Lnet/minecraft/class_140;
 	METHOD method_2825 createList ([F)Lnet/minecraft/class_140;
-	METHOD method_2797 initDataTracker ()V
-	METHOD method_2794 move (DDD)V
 	METHOD method_2826 setPositionAndAnglesAndUpdate (DDDFF)V
-	METHOD method_2873 getLightmapCoordinates (F)I
 	METHOD method_2827 setRotation (FF)V
 	METHOD method_2828 dropItem (II)Lnet/minecraft/class_22;
-	METHOD method_2855 writeCustomDataToTag (Lnet/minecraft/class_209;)V
-	METHOD method_2795 addVelocity (DDD)V
 	METHOD method_2830 setPositionAndAngles (DDDFF)V
 		ARG 1 x
 		ARG 3 y
@@ -83,14 +78,13 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 		ARG 8 pitch
 	METHOD method_2831 changeLookDirection (FF)V
 	METHOD method_2832 saveSelfToTag (Lnet/minecraft/class_209;)Z
-	METHOD method_2854 interact (Lnet/minecraft/class_75;)Z
+	METHOD method_2833 setSneaking (Z)V
 	METHOD method_2834 setPosition (DDD)V
 	METHOD method_2835 toTag (Lnet/minecraft/class_209;)V
-	METHOD method_2865 handleFallDamage (F)V
+	METHOD method_2836 setSprinting (Z)V
 	METHOD method_2838 setOnFireFor (I)V
 	METHOD method_2839 fromTag (Lnet/minecraft/class_209;)V
 	METHOD method_2840 distanceTo (Lnet/minecraft/class_37;)F
-	METHOD method_2801 canClimb ()Z
 	METHOD method_2842 squaredDistanceTo (DDD)D
 		ARG 1 x
 		ARG 3 y
@@ -99,11 +93,22 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	METHOD method_2845 distanceTo (DDD)D
 	METHOD method_2846 inAir (I)V
 	METHOD method_2847 pushOutOfBlocks (DDD)Z
-	METHOD method_2786 startRiding (Lnet/minecraft/class_37;)V
 	METHOD method_2850 getEyeHeight ()F
-	METHOD method_2783 updatePassengerPosition ()V
-	METHOD method_2777 canPlayerAttack ()Z
-	METHOD method_2805 getMountedHeightOffset ()D
-	METHOD method_2804 collides ()Z
-	METHOD method_2778 resetFallDistance ()V
+	METHOD method_2851 tick ()V
+	METHOD method_2852 readCustomDataFromTag (Lnet/minecraft/class_209;)V
+		ARG 1 tag
+	METHOD method_2854 interact (Lnet/minecraft/class_75;)Z
+		ARG 1 player
+	METHOD method_2855 writeCustomDataToTag (Lnet/minecraft/class_209;)V
+		ARG 1 tag
+	METHOD method_2856 baseTick ()V
+	METHOD method_2857 destroy ()V
+	METHOD method_2858 getStandingEyeHeight ()F
+	METHOD method_2859 isAlive ()Z
+	METHOD method_2862 handleStatus (B)V
+	METHOD method_2864 setSize (FF)V
+	METHOD method_2865 handleFallDamage (F)V
 	METHOD method_2868 getTexture ()Ljava/lang/String;
+	METHOD method_2870 setVelocity (DDD)V
+	METHOD method_2872 getBrightnessAtEyes (F)F
+	METHOD method_2873 getLightmapCoordinates (F)I

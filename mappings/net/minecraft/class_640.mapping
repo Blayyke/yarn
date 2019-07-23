@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_640
+	FIELD field_3303 logger Ljava/util/logging/Logger;
+	FIELD field_3306 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_3313 random Ljava/util/Random;

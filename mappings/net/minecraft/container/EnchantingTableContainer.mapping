@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_680 net/minecraft/container/EnchantingTableContainer
-	CLASS 2
-		FIELD field_2155 enchantingContainer Lnet/minecraft/class_680;
 	CLASS 1
 		FIELD field_2154 enchantingTableContainer Lnet/minecraft/class_680;
+	CLASS 2
+		FIELD field_2155 enchantingContainer Lnet/minecraft/class_680;
 	FIELD field_2146 inventory Lnet/minecraft/class_125;
 	FIELD field_2148 enchantmentPower [I
 	FIELD field_2149 world Lnet/minecraft/class_26;
+	FIELD field_2150 x I
+	FIELD field_2151 y I
+	FIELD field_2152 z I
 	FIELD field_2153 random Ljava/util/Random;

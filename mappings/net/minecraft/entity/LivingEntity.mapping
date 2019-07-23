@@ -2,11 +2,11 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	FIELD field_546 navigation Lnet/minecraft/class_157;
 	FIELD field_547 target Lnet/minecraft/class_133;
 	FIELD field_548 visibilityCache Lnet/minecraft/class_158;
+	FIELD field_554 attacker Lnet/minecraft/class_133;
 	FIELD field_555 hurtTime I
 	FIELD field_558 deathTime I
 	FIELD field_559 attackTime I
 	FIELD field_563 experiencePoints I
-	FIELD field_554 attacker Lnet/minecraft/class_133;
 	FIELD field_573 activeEffects Ljava/util/HashMap;
 	FIELD field_574 goalSelector Lnet/minecraft/class_160;
 	FIELD field_575 targetSelector Lnet/minecraft/class_160;
@@ -14,20 +14,28 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	FIELD field_604 health I
 	FIELD field_611 despawnCounter I
 	FIELD field_617 movementSpeed F
+	METHOD method_424 getWalkSpeed ()F
+	METHOD method_425 canSpawn ()Z
+	METHOD method_427 travel (FF)V
+	METHOD method_429 getMaxHealth ()I
+	METHOD method_430 tickMovement ()V
+	METHOD method_431 getMobDrops ()I
+	METHOD method_432 getAmbientSound ()Ljava/lang/String;
+	METHOD method_433 getHurtSound ()Ljava/lang/String;
+	METHOD method_434 getDeathSound ()Ljava/lang/String;
 	METHOD method_438 hasEffect (Lnet/minecraft/class_136;)Z
 	METHOD method_442 onKilledBy (Lnet/minecraft/class_162;)V
 	METHOD method_445 jump ()V
 	METHOD method_447 getLookControl ()Lnet/minecraft/class_153;
+	METHOD method_448 getMoveControl ()Lnet/minecraft/class_154;
 	METHOD method_450 getNavigation ()Lnet/minecraft/class_157;
 	METHOD method_451 getVisibilityCache ()Lnet/minecraft/class_158;
 	METHOD method_452 getRandom ()Ljava/util/Random;
 	METHOD method_453 getAttacker ()Lnet/minecraft/class_133;
 	METHOD method_455 getDespawnCounter ()I
 	METHOD method_457 getTarget ()Lnet/minecraft/class_133;
-	METHOD method_427 travel (FF)V
 	METHOD method_467 getLookPitchSpeed ()I
 	METHOD method_469 cannotMove ()Z
-	METHOD method_424 getWalkSpeed ()F
 	METHOD method_471 isSleeping ()Z
 	METHOD method_475 getEffect (Lnet/minecraft/class_136;)Lnet/minecraft/class_137;
 	METHOD method_477 addStatusEffect (Lnet/minecraft/class_137;)V
@@ -38,15 +46,11 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_488 isBaby ()Z
 	METHOD method_489 onToolBroken (Lnet/minecraft/class_24;)V
 	METHOD method_492 applyDamage (Lnet/minecraft/class_162;I)V
-	METHOD method_429 getMaxHealth ()I
+	METHOD method_493 tryAttack (Lnet/minecraft/class_37;)Z
+	METHOD method_494 canImmediatelyDespawn ()Z
 	METHOD method_496 applyArmorToDamage (Lnet/minecraft/class_162;I)I
-	METHOD method_430 updateDespawnCounter ()V
-	METHOD method_431 getMobDrops ()I
 	METHOD method_499 mobTick ()V
 	METHOD method_502 damageArmor (I)V
-	METHOD method_425 canSpawn ()Z
+	METHOD method_505 getMinAmbientSoundDelay ()I
 	METHOD method_509 addHealth (I)V
 	METHOD method_510 setHealth (I)V
-	METHOD method_432 getAmbientSound ()Ljava/lang/String;
-	METHOD method_433 getHurtSound ()Ljava/lang/String;
-	METHOD method_434 getDeathSound ()Ljava/lang/String;
