@@ -14,6 +14,7 @@ CLASS net/minecraft/class_26 net/minecraft/world/World
 	FIELD field_2082 properties Lnet/minecraft/class_427;
 	METHOD method_1667 isPlayerInRange (DDDD)Lnet/minecraft/class_75;
 	METHOD method_1668 playSound (DDDLjava/lang/String;FF)V
+	METHOD method_1671 setBlock (IIIII)Z
 	METHOD method_1672 (IIIIII)Z
 		ARG 2 y
 	METHOD method_1674 setBlockEntity (IIILnet/minecraft/class_121;)V

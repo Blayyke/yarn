@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_725 net/minecraft/world/biome/Decorator
+	FIELD field_2345 deadbushCount I
+	FIELD field_2353 generateSprings Z
+	FIELD field_2354 decorator Lnet/minecraft/class_26;
+	FIELD field_2355 rand Ljava/util/Random;
+	FIELD field_2356 x I
+	FIELD field_2357 z I
+	FIELD field_2379 treeCount I
+	METHOD method_1984 generateOre (ILnet/minecraft/class_180;II)V
+	METHOD method_1985 startDecorating (Lnet/minecraft/class_26;Ljava/util/Random;II)V
+		ARG 1 world
+		ARG 2 rand
+		ARG 3 x
+		ARG 4 z
+	METHOD method_1986 genOres ()V
+	METHOD method_1987 generateOreSpread (ILnet/minecraft/class_180;II)V
+	METHOD method_1988 decorate ()V

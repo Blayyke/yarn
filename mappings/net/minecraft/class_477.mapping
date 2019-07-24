@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_477
-	FIELD field_1352 id I
-	METHOD <init> (II)V
-		ARG 1 id
