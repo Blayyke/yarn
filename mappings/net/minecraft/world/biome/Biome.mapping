@@ -10,10 +10,10 @@ CLASS net/minecraft/class_145 net/minecraft/world/biome/Biome
 	FIELD field_3395 peacefulSpawns Ljava/util/List;
 	FIELD field_3396 waterSpawns Ljava/util/List;
 	FIELD field_3397 id I
-	FIELD field_3398 small_oak_tree Lnet/minecraft/class_506;
-	FIELD field_3399 large_oak_tree Lnet/minecraft/class_812;
-	FIELD field_3402 snows Z
-	FIELD field_3403 rains Z
+	FIELD field_3398 smallOakTree Lnet/minecraft/class_506;
+	FIELD field_3399 largeOakTree Lnet/minecraft/class_812;
+	FIELD field_3402 canSnow Z
+	FIELD field_3403 canRain Z
 	FIELD field_3404 BIOMES [Lnet/minecraft/class_145;
 	FIELD field_3405 OCEAN Lnet/minecraft/class_145;
 	FIELD field_3406 PLAINS Lnet/minecraft/class_145;
@@ -41,6 +41,7 @@ CLASS net/minecraft/class_145 net/minecraft/world/biome/Biome
 	FIELD field_3428 name Ljava/lang/String;
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_2698 createDecorator ()Lnet/minecraft/class_725;
 	METHOD method_2699 getSkyColor (F)I
 		ARG 1 temperature
 	METHOD method_2700 setTemperatureDownfall (FF)Lnet/minecraft/class_145;

@@ -1,6 +1,4 @@
-CLASS net/minecraft/class_477 net/minecraft/structure/GrassFeature
-	FIELD field_1352 id I
-	FIELD field_1353 blockId I
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 blockId
+CLASS net/minecraft/class_959 net/minecraft/structure/GrassFeature
+	FIELD field_3938 blockId I
+	METHOD <init> (I)V
+		ARG 1 blockId
