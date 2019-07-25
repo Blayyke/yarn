@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_166 net/minecraft/world/gen/BiomeSampler
+CLASS net/minecraft/class_166 net/minecraft/world/gen/layer/BiomeSampler
 	CLASS class_944
 		FIELD field_3900 currentTimeMillis J
 		METHOD method_3143 getBiome (II)Lnet/minecraft/class_145;

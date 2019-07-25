@@ -12,6 +12,7 @@ CLASS net/minecraft/class_26 net/minecraft/world/World
 	FIELD field_2078 dimension Lnet/minecraft/class_425;
 	FIELD field_2080 chunkGenerator Lnet/minecraft/class_146;
 	FIELD field_2082 properties Lnet/minecraft/class_427;
+	METHOD method_1665 getBiomeSource ()Lnet/minecraft/class_144;
 	METHOD method_1667 isPlayerInRange (DDDD)Lnet/minecraft/class_75;
 	METHOD method_1668 playSound (DDDLjava/lang/String;FF)V
 	METHOD method_1671 setBlockWithMetadata (IIIII)Z

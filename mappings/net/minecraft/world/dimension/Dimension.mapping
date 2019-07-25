@@ -6,12 +6,15 @@ CLASS net/minecraft/class_425 net/minecraft/world/dimension/Dimension
 	FIELD field_1264 lightLevelToBrightness [F
 	FIELD field_1266 backgroundColor [F
 	METHOD method_1023 initializeBiomeSource ()V
-	METHOD method_1032 getBackgroundColor (FF)[F
 	METHOD method_1025 getSkyAngle (JF)F
 	METHOD method_1026 createChunkGenerator ()Lnet/minecraft/class_146;
 	METHOD method_1027 getFogColor (FF)Lnet/minecraft/class_131;
 	METHOD method_1030 hasVisibleSky ()Z
+	METHOD method_1031 initializeLightLevelToBrightness ()V
+	METHOD method_1032 getBackgroundColor (FF)[F
+	METHOD method_1034 (Lnet/minecraft/class_26;)V
+		ARG 1 world
 	METHOD method_1037 getCloudHeight ()F
 	METHOD method_1038 getForcedSpawnPoint ()Lnet/minecraft/class_159;
-	METHOD method_1031 initializeLightLevelToBrightness ()V
+	METHOD method_1039 getBaseHeight ()I
 	METHOD method_1041 getHorizonShadingRatio ()D
