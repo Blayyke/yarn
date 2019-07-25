@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_576
-	METHOD method_1366 getChestLoot (Ljava/util/Random;)Lnet/minecraft/class_24;

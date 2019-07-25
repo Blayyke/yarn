@@ -1,12 +1,19 @@
 CLASS net/minecraft/class_145 net/minecraft/world/biome/Biome
 	FIELD field_3385 surfaceBlock B
 	FIELD field_3386 subSurfaceBlock B
-	FIELD field_3390 minTemperature F
-	FIELD field_3391 maxTemperature F
+	FIELD field_3388 height F
+	FIELD field_3389 scale F
+	FIELD field_3390 temperature F
+	FIELD field_3391 downfall F
+	FIELD field_3393 decorator Lnet/minecraft/class_725;
 	FIELD field_3394 hostileSpawns Ljava/util/List;
 	FIELD field_3395 peacefulSpawns Ljava/util/List;
 	FIELD field_3396 waterSpawns Ljava/util/List;
 	FIELD field_3397 id I
+	FIELD field_3398 smallOakTree Lnet/minecraft/class_506;
+	FIELD field_3399 largeOakTree Lnet/minecraft/class_812;
+	FIELD field_3402 canSnow Z
+	FIELD field_3403 canRain Z
 	FIELD field_3404 BIOMES [Lnet/minecraft/class_145;
 	FIELD field_3405 OCEAN Lnet/minecraft/class_145;
 	FIELD field_3406 PLAINS Lnet/minecraft/class_145;
@@ -34,15 +41,34 @@ CLASS net/minecraft/class_145 net/minecraft/world/biome/Biome
 	FIELD field_3428 name Ljava/lang/String;
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_2698 createDecorator ()Lnet/minecraft/class_725;
 	METHOD method_2699 getSkyColor (F)I
-	METHOD method_2700 setTemperatureRange (FF)Lnet/minecraft/class_145;
-		ARG 1 minTemp
-		ARG 2 maxTemp
+		ARG 1 temperature
+	METHOD method_2700 setTemperatureDownfall (FF)Lnet/minecraft/class_145;
+		ARG 1 temperature
+		ARG 2 downfall
 	METHOD method_2702 getSpawnableMobs (Lnet/minecraft/class_104;)Ljava/util/List;
 	METHOD method_2703 setName (Ljava/lang/String;)Lnet/minecraft/class_145;
+		ARG 1 name
+	METHOD method_2704 getTree (Ljava/util/Random;)Lnet/minecraft/class_180;
+		ARG 1 rand
+	METHOD method_2705 decorate (Lnet/minecraft/class_26;Ljava/util/Random;II)V
+		ARG 1 world
+		ARG 2 rand
+		ARG 3 x
+		ARG 4 z
+	METHOD method_2706 setSnowy ()Lnet/minecraft/class_145;
+	METHOD method_2707 setHeightScale (FF)Lnet/minecraft/class_145;
+		ARG 1 height
+		ARG 2 scale
+	METHOD method_2709 getGrass (Ljava/util/Random;)Lnet/minecraft/class_180;
+		ARG 1 rand
 	METHOD method_2710 canSnow ()Z
 	METHOD method_2711 canRain ()Z
 	METHOD method_2712 hasHighHumidity ()Z
 	METHOD method_2713 getMaxSpawnLimit ()F
-	METHOD method_2716 getMaxTemperature ()F
-	METHOD method_2717 getMinTemperature ()F
+	METHOD method_2716 getDownfall ()F
+	METHOD method_2717 getTemperature ()F
+	METHOD method_2718 getGrassColor ()I
+	METHOD method_2719 getFoliageColor ()I
+	METHOD method_2720 setRainless ()Lnet/minecraft/class_145;

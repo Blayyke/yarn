@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_741 net/minecraft/block/SandBlock
+	FIELD field_2516 dontFall Z
