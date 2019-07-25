@@ -1,1 +1,2 @@
-CLASS net/minecraft/class_980 net/minecraft/server/network/ServerPlayerEntity
+CLASS net/minecraft/class_86 net/minecraft/server/network/ServerPlayerEntity
+	FIELD field_2108 server Lnet/minecraft/server/MinecraftServer;
