@@ -12,7 +12,7 @@ buildscript {
 	}
 	dependencies {
 		classpath "cuchaz:enigma:0.14.1.130"
-		classpath 'com.github.Chocohead:Stitch:2edd527'
+		classpath 'com.github.Chocohead:Stitch:fc82ff6'
 		classpath "commons-io:commons-io:2.6"
 		classpath "com.google.guava:guava:28.0-jre"
 		classpath 'de.undercouch:gradle-download-task:3.4.3'
@@ -58,7 +58,7 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime 'com.github.Chocohead:Stitch:2edd527'
+	enigmaRuntime 'com.github.Chocohead:Stitch:fc82ff6'
 	enigmaRuntime "cuchaz:enigma:0.14.1.130"
 }
 
@@ -75,12 +75,18 @@ def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def libraries = new File(cacheFilesMinecraft, "${minecraft_version}-libraries")
 def libs = new File("build/libs/")
 
+import groovy.io.FileType
 import groovy.json.JsonSlurper
+
 import org.apache.commons.io.FileUtils
+
 import com.google.common.hash.Hashing
 import com.google.common.io.Files
+
 import cuchaz.enigma.command.CheckMappingsCommand
 import cuchaz.enigma.command.ConvertMappingsCommand
+
+import net.fabricmc.stitch.commands.CommandFixNesting
 import net.fabricmc.stitch.commands.CommandMergeTiny
 import net.fabricmc.stitch.commands.CommandRewriteIntermediary
 import net.fabricmc.stitch.merge.JarMerger
@@ -95,7 +101,7 @@ import net.fabricmc.mappings.Mappings
 import net.fabricmc.mappings.MappingsProvider
 import net.fabricmc.tinyremapper.IMappingProvider
 import net.fabricmc.tinyremapper.MemberInstance
-import groovy.io.FileType
+
 import java.util.zip.GZIPOutputStream
 
 boolean validateChecksum(File file, String checksum) {
@@ -263,6 +269,8 @@ task mergeJars(dependsOn: [remapClientJar, remapServerJar]) {
 		def jarMerger = new JarMerger(clientIntermediaryJar, serverIntermediaryJar, mergedJar)
 		jarMerger.merge()
 		jarMerger.close()
+
+		CommandFixNesting.run(mergedJar)
 	}
 
 }
