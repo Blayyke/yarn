@@ -1,2 +1,6 @@
 CLASS net/minecraft/class_35 net/minecraft/client/render/entity/model/EntityModel
+	FIELD field_2337 isChild Z
+	FIELD field_2338 textureWidth I
+	FIELD field_2339 textureHeight I
+	METHOD method_1982 setAngles (FFFFFF)V
 	METHOD method_1983 render (Lnet/minecraft/class_37;FFFFFF)V

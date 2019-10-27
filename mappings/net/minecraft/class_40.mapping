@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_40
+	FIELD field_63 logger Ljava/util/logging/Logger;
+	FIELD field_64 server Lnet/minecraft/server/MinecraftServer;
+	METHOD method_48 handleCommand (Lnet/minecraft/class_41;)V

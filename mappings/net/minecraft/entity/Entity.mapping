@@ -9,6 +9,7 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	FIELD field_3519 prevRenderY D
 	FIELD field_3520 prevRenderZ D
 	FIELD field_3525 random Ljava/util/Random;
+	FIELD field_3528 isInsideWater Z
 	FIELD field_3531 MAX_ENTITY_ID I
 	FIELD field_3533 immuneToFire Z
 	FIELD field_3534 dataTracker Lnet/minecraft/class_357;
@@ -47,6 +48,7 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	METHOD method_2788 onStruckByLightning (Lnet/minecraft/class_254;)V
 	METHOD method_2789 getHeightOffset ()D
 	METHOD method_2790 isInsideWall ()Z
+	METHOD method_2791 setInPortal ()V
 	METHOD method_2792 onKilledOther (Lnet/minecraft/class_37;I)V
 	METHOD method_2794 move (DDD)V
 	METHOD method_2795 addVelocity (DDD)V
@@ -58,6 +60,7 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	METHOD method_2806 setOnFireFromLava ()V
 	METHOD method_2807 extinguish ()V
 	METHOD method_2808 isImmuneToFire ()Z
+	METHOD method_2809 isTouchingWater ()Z
 	METHOD method_2810 scheduleVelocityUpdate ()V
 	METHOD method_2815 isSprinting ()Z
 	METHOD method_2818 getParts ()[Lnet/minecraft/class_37;

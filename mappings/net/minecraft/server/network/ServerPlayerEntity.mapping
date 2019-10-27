@@ -1,3 +1,6 @@
 CLASS net/minecraft/class_86 net/minecraft/server/network/ServerPlayerEntity
+	FIELD field_2107 networkHandler Lnet/minecraft/class_640;
 	FIELD field_2108 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_2122 pingMilliseconds I
+	METHOD method_1847 markHealthDirty ()V
+	METHOD method_1852 openContainer (Lnet/minecraft/class_186;)V

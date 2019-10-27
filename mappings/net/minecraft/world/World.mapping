@@ -22,10 +22,12 @@ CLASS net/minecraft/class_26 net/minecraft/world/World
 	METHOD method_1675 getLightLevel (IIIZ)I
 	METHOD method_1677 setTime (J)V
 	METHOD method_1682 getLightLevel (Lnet/minecraft/class_143;III)I
+	METHOD method_1684 intersectsEntities (Lnet/minecraft/class_39;)Z
 	METHOD method_1691 getEntities (Ljava/lang/Class;Lnet/minecraft/class_39;)Ljava/util/List;
 	METHOD method_1692 getClosestEntity (Ljava/lang/Class;Lnet/minecraft/class_39;Lnet/minecraft/class_37;)Lnet/minecraft/class_37;
 	METHOD method_1695 addParticle (Ljava/lang/String;DDDDDD)V
 	METHOD method_1698 addBlockEntities (Ljava/util/Collection;)V
+	METHOD method_1705 sendEntityStatus (Lnet/minecraft/class_37;B)V
 	METHOD method_1706 getClosestPlayer (Lnet/minecraft/class_37;D)Lnet/minecraft/class_75;
 	METHOD method_1707 createExplosion (Lnet/minecraft/class_37;DDDF)Lnet/minecraft/class_286;
 	METHOD method_1708 createExplosion (Lnet/minecraft/class_37;DDDFZ)Lnet/minecraft/class_286;
@@ -62,6 +64,8 @@ CLASS net/minecraft/class_26 net/minecraft/world/World
 	METHOD method_1791 removeBlockEntity (III)V
 	METHOD method_1793 getProperties ()Lnet/minecraft/class_427;
 	METHOD method_1799 canSkipNight ()Z
+	METHOD method_1803 isRaining ()Z
+	METHOD method_1805 isRainingAt (III)Z
 	METHOD method_1809 disconnect ()V
 	METHOD method_1810 getHorizonHeight ()D
 	METHOD method_1812 getSkyColor (Lnet/minecraft/class_37;F)Lnet/minecraft/class_131;
@@ -69,3 +73,4 @@ CLASS net/minecraft/class_26 net/minecraft/world/World
 	METHOD method_1817 getAmbientLight (F)F
 	METHOD method_1822 getCloudColor (F)Lnet/minecraft/class_131;
 	METHOD method_1825 getStarsBrightness (F)F
+	METHOD method_1826 setRainGradient (F)V

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_78
+	FIELD field_246 logger Ljava/util/logging/Logger;
+	FIELD field_247 server Lnet/minecraft/server/MinecraftServer;

@@ -13,6 +13,7 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	FIELD field_573 activeEffects Ljava/util/HashMap;
 	FIELD field_574 goalSelector Lnet/minecraft/class_160;
 	FIELD field_575 targetSelector Lnet/minecraft/class_160;
+	FIELD field_584 bodyYaw F
 	FIELD field_593 texture Ljava/lang/String;
 	FIELD field_604 health I
 	FIELD field_611 despawnCounter I
@@ -20,12 +21,14 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_424 getWalkSpeed ()F
 	METHOD method_425 canSpawn ()Z
 	METHOD method_427 travel (FF)V
+	METHOD method_428 onDeath (ZI)V
 	METHOD method_429 getMaxHealth ()I
 	METHOD method_430 tickMovement ()V
 	METHOD method_431 getMobDrops ()I
 	METHOD method_432 getAmbientSound ()Ljava/lang/String;
 	METHOD method_433 getHurtSound ()Ljava/lang/String;
 	METHOD method_434 getDeathSound ()Ljava/lang/String;
+	METHOD method_435 getSoundVolume ()F
 	METHOD method_438 hasEffect (Lnet/minecraft/class_136;)Z
 	METHOD method_442 onKilledBy (Lnet/minecraft/class_162;)V
 	METHOD method_445 jump ()V
@@ -57,7 +60,14 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_502 damageArmor (I)V
 	METHOD method_504 setJumping (Z)V
 	METHOD method_505 getMinAmbientSoundDelay ()I
+	METHOD method_506 (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_508 getRotationVec (F)Lnet/minecraft/class_131;
 	METHOD method_509 addHealth (I)V
 	METHOD method_510 setHealth (I)V
+	METHOD method_515 canBreatheInWater ()Z
+	METHOD method_516 getGroup ()Lnet/minecraft/class_163;
 	METHOD method_517 tickNewAi ()V
 	METHOD method_519 checkDespawn ()V

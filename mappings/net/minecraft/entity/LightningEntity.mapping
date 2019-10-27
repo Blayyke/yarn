@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_254 net/minecraft/entity/LightningEntity
+	FIELD field_1563 seed J
+	FIELD field_1564 ambientTick I
+	FIELD field_1565 remainingActions I
+	METHOD <init> (Lnet/minecraft/class_26;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

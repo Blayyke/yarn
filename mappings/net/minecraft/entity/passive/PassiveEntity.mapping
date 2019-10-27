@@ -1,3 +1,3 @@
-CLASS net/minecraft/class_397
+CLASS net/minecraft/class_397 net/minecraft/entity/passive/PassiveEntity
 	METHOD method_969 getBreedingAge ()I
 	METHOD method_970 setBreedingAge (I)V
