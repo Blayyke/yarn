@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
+	FIELD field_542 lookControl Lnet/minecraft/class_153;
+	FIELD field_543 moveControl Lnet/minecraft/class_154;
+	FIELD field_544 jumpControl Lnet/minecraft/class_155;
 	FIELD field_546 navigation Lnet/minecraft/class_157;
 	FIELD field_547 target Lnet/minecraft/class_133;
 	FIELD field_548 visibilityCache Lnet/minecraft/class_158;
@@ -28,6 +31,7 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_445 jump ()V
 	METHOD method_447 getLookControl ()Lnet/minecraft/class_153;
 	METHOD method_448 getMoveControl ()Lnet/minecraft/class_154;
+	METHOD method_449 getJumpControl ()Lnet/minecraft/class_155;
 	METHOD method_450 getNavigation ()Lnet/minecraft/class_157;
 	METHOD method_451 getVisibilityCache ()Lnet/minecraft/class_158;
 	METHOD method_452 getRandom ()Ljava/util/Random;
@@ -51,6 +55,9 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_496 applyArmorToDamage (Lnet/minecraft/class_162;I)I
 	METHOD method_499 mobTick ()V
 	METHOD method_502 damageArmor (I)V
+	METHOD method_504 setJumping (Z)V
 	METHOD method_505 getMinAmbientSoundDelay ()I
 	METHOD method_509 addHealth (I)V
 	METHOD method_510 setHealth (I)V
+	METHOD method_517 tickNewAi ()V
+	METHOD method_519 checkDespawn ()V

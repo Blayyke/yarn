@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_154
-	METHOD method_2260 isMoving ()Z
-	METHOD method_2263 getSpeed ()F

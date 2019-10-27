@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_987 net/minecraft/server/dedicated/ServerPropertiesHandler
+	FIELD field_4123 logger Ljava/util/logging/Logger;
+	FIELD field_4124 properties Ljava/util/Properties;
+	FIELD field_4125 propertiesFile Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 propertiesFile
+	METHOD method_3271 getInt (Ljava/lang/String;I)I
+	METHOD method_3273 getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD method_3274 getBoolean (Ljava/lang/String;Z)Z
+	METHOD method_3277 getPropertiesFile ()Ljava/io/File;

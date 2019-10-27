@@ -1,0 +1,11 @@
+CLASS net/minecraft/server/MinecraftServer
+	FIELD field_4223 logger Ljava/util/logging/Logger;
+	FIELD field_4226 propertiesHandler Lnet/minecraft/class_987;
+	FIELD field_4236 onlineMode Z
+	FIELD field_4237 spawnAnimals Z
+	FIELD field_4238 spawnNpcs Z
+	FIELD field_4239 pvp Z
+	FIELD field_4240 allowFlight Z
+	FIELD field_4241 motd Ljava/lang/String;
+	FIELD field_4247 serverIp Ljava/lang/String;
+	FIELD field_4248 serverPort I

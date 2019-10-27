@@ -33,6 +33,7 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	FIELD field_3567 prevPitch F
 	FIELD field_3568 boundingBox Lnet/minecraft/class_39;
 	FIELD field_3569 onGround Z
+	METHOD method_2771 isInLava ()Z
 	METHOD method_2772 onPlayerCollision (Lnet/minecraft/class_75;)V
 	METHOD method_2773 playStepSound (IIII)V
 	METHOD method_2775 burn (I)V
@@ -97,6 +98,7 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	METHOD method_2851 tick ()V
 	METHOD method_2852 readCustomDataFromTag (Lnet/minecraft/class_209;)V
 		ARG 1 tag
+	METHOD method_2853 isInsideWater ()Z
 	METHOD method_2854 interact (Lnet/minecraft/class_75;)Z
 		ARG 1 player
 	METHOD method_2855 writeCustomDataToTag (Lnet/minecraft/class_209;)V

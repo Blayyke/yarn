@@ -1,9 +1,17 @@
 CLASS net/minecraft/class_157 net/minecraft/entity/ai/pathing/EntityNavigation
+	FIELD field_4011 entity Lnet/minecraft/class_133;
+	FIELD field_4012 world Lnet/minecraft/class_26;
+	FIELD field_4013 currentPath Lnet/minecraft/class_431;
+	FIELD field_4016 avoidSunlight Z
 	METHOD method_3211 findPathTo (DDD)Lnet/minecraft/class_431;
 	METHOD method_3212 startMovingTo (DDDF)Z
 	METHOD method_3213 setSpeed (F)V
 	METHOD method_3215 findPathTo (Lnet/minecraft/class_133;)Lnet/minecraft/class_431;
 	METHOD method_3216 startMovingTo (Lnet/minecraft/class_133;F)Z
 	METHOD method_3218 startMovingAlong (Lnet/minecraft/class_431;F)Z
+	METHOD method_3225 tick ()V
+	METHOD method_3226 setAvoidSunlight (Z)V
+		ARG 1 avoidSunlight
 	METHOD method_3227 isIdle ()Z
+	METHOD method_3228 setCanSwim (Z)V
 	METHOD method_3229 stop ()V

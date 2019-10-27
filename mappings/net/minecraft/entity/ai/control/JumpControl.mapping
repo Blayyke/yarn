@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_155 net/minecraft/entity/ai/control/JumpControl
+	FIELD field_784 entity Lnet/minecraft/class_133;
+	FIELD field_785 active Z
+	METHOD <init> (Lnet/minecraft/class_133;)V
+		ARG 1 entity
+	METHOD method_641 setActive ()V
+	METHOD method_642 tick ()V

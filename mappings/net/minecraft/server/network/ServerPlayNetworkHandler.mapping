@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_640 net/minecraft/server/network/ServerPlayNetworkHandler
+	FIELD field_3303 logger Ljava/util/logging/Logger;
+	FIELD field_3306 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_3307 player Lnet/minecraft/class_86;
+	FIELD field_3311 keepAliveId I
+	FIELD field_3312 lastKeepAliveTime J
+	FIELD field_3313 random Ljava/util/Random;
