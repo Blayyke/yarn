@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_34 net/minecraft/client/render/entity/EntityRenderer
+	FIELD field_58 model Lnet/minecraft/class_35;
+	FIELD field_59 renderDispatcher Lnet/minecraft/class_36;
+	METHOD method_36 getTextRenderer ()Lnet/minecraft/class_23;
+	METHOD method_37 setRenderDispatcher (Lnet/minecraft/class_36;)V
+		ARG 1 dispatcher

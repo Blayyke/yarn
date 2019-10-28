@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_14 net/minecraft/client/render/entity/model/BipedEntityModel
+	FIELD field_263 head Lnet/minecraft/class_11;
+	FIELD field_264 headwear Lnet/minecraft/class_11;
+	FIELD field_265 body Lnet/minecraft/class_11;
+	FIELD field_266 rightArm Lnet/minecraft/class_11;
+	FIELD field_267 leftArm Lnet/minecraft/class_11;
+	FIELD field_268 rightLeg Lnet/minecraft/class_11;
+	FIELD field_269 leftLeg Lnet/minecraft/class_11;

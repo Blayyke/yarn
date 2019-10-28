@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_432 net/minecraft/client/render/entity/model/EnderDragonEntityModel
+CLASS net/minecraft/class_432 net/minecraft/client/render/entity/model/EnderDragonModel
 	FIELD field_1219 head Lnet/minecraft/class_11;
 	FIELD field_1220 neck Lnet/minecraft/class_11;
 	FIELD field_1221 jaw Lnet/minecraft/class_11;

@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_585 net/minecraft/block/RedstoneTorchBlock
+	METHOD method_1391 isBurnedOut (Lnet/minecraft/class_26;IIIZ)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

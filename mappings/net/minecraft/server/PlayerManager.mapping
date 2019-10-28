@@ -5,6 +5,8 @@ CLASS net/minecraft/class_784 net/minecraft/server/PlayerManager
 	FIELD field_2830 maxPlayers I
 	FIELD field_2831 bans Ljava/util/Set;
 	FIELD field_2832 ipBans Ljava/util/Set;
+	FIELD field_2833 operators Ljava/util/Set;
+	FIELD field_2834 whitelist Ljava/util/Set;
 	FIELD field_2835 bannedPlayersFile Ljava/io/File;
 	FIELD field_2836 bannedIpsFile Ljava/io/File;
 	FIELD field_2837 opsFile Ljava/io/File;
@@ -16,6 +18,7 @@ CLASS net/minecraft/class_784 net/minecraft/server/PlayerManager
 		ARG 1 player
 		ARG 2 world
 	METHOD method_2305 addBan (Ljava/lang/String;)V
+	METHOD method_2306 sendMessage (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD method_2308 sendToAll (Lnet/minecraft/class_87;)V
 		ARG 1 packet
 	METHOD method_2313 removeBan (Ljava/lang/String;)V
@@ -23,13 +26,21 @@ CLASS net/minecraft/class_784 net/minecraft/server/PlayerManager
 	METHOD method_2317 getPlayerNames ()[Ljava/lang/String;
 	METHOD method_2319 removeIpBan (Ljava/lang/String;)V
 	METHOD method_2320 getBans ()Ljava/util/Set;
+	METHOD method_2322 opPlayer (Ljava/lang/String;)V
+		ARG 1 playerName
 	METHOD method_2323 getIpBans ()Ljava/util/Set;
+	METHOD method_2325 deopPlayer (Ljava/lang/String;)V
+		ARG 1 playerName
+	METHOD method_2330 reloadWhitelist ()V
+	METHOD method_2331 getPlayerIgnoreCase (Ljava/lang/String;)Lnet/minecraft/class_86;
+		ARG 1 name
 	METHOD method_2332 getCurrentPlayerCount ()I
 	METHOD method_2334 getMaxPlayerCount ()I
 	METHOD method_2336 loadBans ()V
 	METHOD method_2338 saveBans ()V
 	METHOD method_2339 loadIpBans ()V
 	METHOD method_2340 saveIpBans ()V
+	METHOD method_2341 loadOperators ()V
 	METHOD method_2342 saveOperators ()V
 	METHOD method_2343 loadWhitelist ()V
 	METHOD method_2344 saveWhitelist ()V
