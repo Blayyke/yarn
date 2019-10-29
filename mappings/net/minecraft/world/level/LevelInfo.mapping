@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_637 net/minecraft/world/level/LevelInfo
+	FIELD field_1946 seed J
+	FIELD field_1947 gameType I
+	FIELD field_1948 structures Z
+	FIELD field_1949 hardcore Z
+	FIELD field_1950 generatorType Lnet/minecraft/class_217;
 	METHOD method_1589 getSeed ()J
-	METHOD method_1590 getGameType ()I
+	METHOD method_1590 getGameMode ()I
 	METHOD method_1591 isHardcore ()Z
 	METHOD method_1592 getStructures ()Z
 	METHOD method_1593 getGeneratorType ()Lnet/minecraft/class_217;

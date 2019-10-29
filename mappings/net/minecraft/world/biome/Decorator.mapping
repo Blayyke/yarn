@@ -3,6 +3,7 @@ CLASS net/minecraft/class_725 net/minecraft/world/biome/Decorator
 	FIELD field_2344 grassCount I
 	FIELD field_2345 deadBushCount I
 	FIELD field_2346 mushroomCount I
+	FIELD field_2347 sugarcaneCount I
 	FIELD field_2349 sandDiskCount2 I
 	FIELD field_2350 sandDiskCount I
 	FIELD field_2353 generateSprings Z
@@ -25,6 +26,8 @@ CLASS net/minecraft/class_725 net/minecraft/world/biome/Decorator
 	FIELD field_2371 roseFeature Lnet/minecraft/class_180;
 	FIELD field_2372 brownMushroomFeature Lnet/minecraft/class_180;
 	FIELD field_2373 redMushroomFeature Lnet/minecraft/class_180;
+	FIELD field_2374 giantMushroomFeature Lnet/minecraft/class_180;
+	FIELD field_2375 sugarcaneFeature Lnet/minecraft/class_180;
 	FIELD field_2379 treeCount I
 	METHOD <init> (Lnet/minecraft/class_145;)V
 		ARG 1 biome

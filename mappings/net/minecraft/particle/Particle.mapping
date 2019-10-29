@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_542
+CLASS net/minecraft/class_542 net/minecraft/particle/Particle
 	METHOD <init> (Lnet/minecraft/class_26;DDDDDD)V
 		ARG 2 x
 		ARG 4 y

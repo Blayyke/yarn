@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_694 net/minecraft/client/color/world/FoliageColors
+	FIELD field_2204 colorMap [I
+	METHOD method_1898 getSpruceColor ()I
+	METHOD method_1899 getColor (DD)I
+	METHOD method_1900 setColorMap ([I)V
+	METHOD method_1901 getBirchColor ()I
+	METHOD method_1902 getDefaultColor ()I

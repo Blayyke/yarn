@@ -1,6 +1,8 @@
 CLASS net/minecraft/server/MinecraftServer
+	FIELD field_4214 running Z
 	FIELD field_4223 logger Ljava/util/logging/Logger;
 	FIELD field_4226 propertiesHandler Lnet/minecraft/class_987;
+	FIELD field_4227 worlds [Lnet/minecraft/class_76;
 	FIELD field_4230 playerManager Lnet/minecraft/class_784;
 	FIELD field_4236 onlineMode Z
 	FIELD field_4237 spawnAnimals Z
@@ -12,5 +14,6 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_4248 serverPort I
 	METHOD method_3343 stopServer ()V
 	METHOD method_3344 getWorld (I)Lnet/minecraft/class_76;
+		ARG 1 dimensionId
 	METHOD method_3346 getFile (Ljava/lang/String;)Ljava/io/File;
 	METHOD method_3353 getServerBrand ()Ljava/lang/String;

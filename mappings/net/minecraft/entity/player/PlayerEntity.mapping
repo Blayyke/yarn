@@ -30,6 +30,7 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	METHOD method_2135 dropSelectedItem ()Lnet/minecraft/class_22;
 	METHOD method_2136 swingHand ()V
 	METHOD method_2137 updateEyeHeight ()V
+	METHOD method_2138 isPvpEnabled ()Z
 	METHOD method_2140 trySleep (III)Lnet/minecraft/class_519;
 		ARG 1 bedX
 		ARG 2 bedY
@@ -68,6 +69,7 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	METHOD method_2180 canConsume (Z)Z
 	METHOD method_2181 addExhaustion (F)V
 	METHOD method_2183 copyFrom (Lnet/minecraft/class_75;)V
+		ARG 1 players
 	METHOD method_2185 interactWith (Lnet/minecraft/class_37;)V
 	METHOD method_2186 attack (Lnet/minecraft/class_37;)V
 	METHOD method_2187 addExperience (I)V

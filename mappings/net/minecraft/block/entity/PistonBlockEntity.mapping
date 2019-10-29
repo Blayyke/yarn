@@ -6,6 +6,7 @@ CLASS net/minecraft/class_654 net/minecraft/block/entity/PistonBlockEntity
 	FIELD field_3677 source Z
 	FIELD field_3678 nextProgress F
 	FIELD field_3679 progress F
+	METHOD method_2988 getBlockId ()I
 	METHOD method_2989 getProgress (F)F
 	METHOD method_2991 getRenderOffsetX (F)F
 	METHOD method_2992 getRenderOffsetY (F)F

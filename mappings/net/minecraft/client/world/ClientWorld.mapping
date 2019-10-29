@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_195
+CLASS net/minecraft/class_195 net/minecraft/client/world/ClientWorld
 	FIELD field_2820 clientNetworkHandler Lnet/minecraft/class_192;
 	METHOD <init> (Lnet/minecraft/class_192;Lnet/minecraft/class_637;II)V
 		ARG 4 difficulty
