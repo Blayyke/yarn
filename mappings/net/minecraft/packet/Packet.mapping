@@ -10,3 +10,7 @@ CLASS net/minecraft/class_87 net/minecraft/packet/Packet
 	METHOD method_3009 register (IZZLjava/lang/Class;)V
 		ARG 0 packetId
 		ARG 3 packetClass
+	METHOD method_3010 writeItemStack (Lnet/minecraft/class_24;Ljava/io/DataOutputStream;)V
+	METHOD method_3013 readString (Ljava/io/DataInputStream;I)Ljava/lang/String;
+	METHOD method_3014 decode (Ljava/io/DataInputStream;Z)Lnet/minecraft/class_87;
+	METHOD method_3015 writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V

@@ -4,4 +4,5 @@ CLASS net/minecraft/class_36 net/minecraft/client/render/entity/EntityRenderDisp
 	FIELD field_1039 world Lnet/minecraft/class_26;
 	FIELD field_1043 options Lnet/minecraft/class_271;
 	FIELD field_1047 renderers Ljava/util/Map;
-	FIELD field_1048 font Lnet/minecraft/class_23;
+	FIELD field_1048 textRenderer Lnet/minecraft/class_23;
+	METHOD method_817 getTextRenderer ()Lnet/minecraft/class_23;

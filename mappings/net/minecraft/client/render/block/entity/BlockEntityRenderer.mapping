@@ -4,4 +4,5 @@ CLASS net/minecraft/class_134 net/minecraft/client/render/block/entity/BlockEnti
 	METHOD method_1120 setRenderers (Lnet/minecraft/class_132;)V
 	METHOD method_1121 bindTexture (Ljava/lang/String;)V
 	METHOD method_1122 render (Lnet/minecraft/class_121;DDDF)V
+		ARG 1 entity
 	METHOD method_1123 setWorld (Lnet/minecraft/class_26;)V

@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_975 net/minecraft/enchantment/DamageEnchantment
+	FIELD field_4035 typeNames [Ljava/lang/String;
+	FIELD field_4039 typeIndex I

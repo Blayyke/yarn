@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_129 net/minecraft/client/color/world/GrassColors
+	FIELD field_392 colorMap [I
+	METHOD method_306 getColor (DD)I
+	METHOD method_307 setColorMap ([I)V

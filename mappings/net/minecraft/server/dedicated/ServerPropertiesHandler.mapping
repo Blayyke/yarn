@@ -4,7 +4,11 @@ CLASS net/minecraft/class_987 net/minecraft/server/dedicated/ServerPropertiesHan
 	FIELD field_4125 propertiesFile Ljava/io/File;
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 propertiesFile
+	METHOD method_3270 regenProperties ()V
 	METHOD method_3271 getInt (Ljava/lang/String;I)I
+	METHOD method_3272 setProperty (Ljava/lang/String;Ljava/lang/Object;)V
 	METHOD method_3273 getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD method_3274 getBoolean (Ljava/lang/String;Z)Z
+	METHOD method_3275 saveProperties ()V
+	METHOD method_3276 setPropertyAndSave (Ljava/lang/String;Z)V
 	METHOD method_3277 getPropertiesFile ()Ljava/io/File;

@@ -3,3 +3,4 @@ CLASS net/minecraft/class_357
 	METHOD method_843 startTracking (ILjava/lang/Object;)V
 		ARG 1 id
 	METHOD method_850 set (ILjava/lang/Object;)V
+	METHOD method_851 getInt (I)I

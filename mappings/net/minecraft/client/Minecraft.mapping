@@ -1,12 +1,18 @@
 CLASS net/minecraft/client/Minecraft
+	CLASS class_992 TimerHackThread
 	CLASS class_993
 		FIELD field_4202 minecraft Lnet/minecraft/client/Minecraft;
 	CLASS class_996
 		FIELD field_4206 frame Ljava/awt/Frame;
 	FIELD field_4137 options Lnet/minecraft/class_271;
+	FIELD field_4138 applet Lnet/minecraft/client/MinecraftApplet;
 	FIELD field_4147 inGameHud Lnet/minecraft/class_48;
+	FIELD field_4148 running Z
+	FIELD field_4154 cursorLocked Z
 	FIELD field_4156 lastTickTime J
-	FIELD field_4163 INSTANCE Lnet/minecraft/client/Minecraft;
+	FIELD field_4161 resourceDownloadThread Lnet/minecraft/class_522;
+	FIELD field_4163 instance Lnet/minecraft/client/Minecraft;
+	FIELD field_4164 attackCooldown I
 	FIELD field_4174 openProfilerSection Ljava/lang/String;
 	FIELD field_4177 interactionManager Lnet/minecraft/class_252;
 	FIELD field_4178 windowScaledWidth I
@@ -19,6 +25,7 @@ CLASS net/minecraft/client/Minecraft
 	FIELD field_4189 paused Z
 	FIELD field_4190 textureManager Lnet/minecraft/class_18;
 	FIELD field_4191 textRenderer Lnet/minecraft/class_23;
+	FIELD field_4192 enchantingTextRenderer Lnet/minecraft/class_23;
 	FIELD field_4193 currentScreen Lnet/minecraft/class_65;
 	FIELD field_4195 gameRenderer Lnet/minecraft/class_857;
 	FIELD field_4197 chatHud Lnet/minecraft/class_371;
@@ -31,11 +38,12 @@ CLASS net/minecraft/client/Minecraft
 	METHOD method_3308 handleProfilerKeyPress (I)V
 	METHOD method_3313 doItemUse (I)V
 	METHOD method_3314 isCommand (Ljava/lang/String;)Z
-	METHOD method_3315 closeGame ()V
+	METHOD method_3315 stop ()V
 	METHOD method_3316 setPhase (Ljava/lang/String;)V
-	METHOD method_3319 stopGame ()V
+	METHOD method_3319 scheduleStop ()V
 	METHOD method_3320 lockCursor ()V
 	METHOD method_3321 unlockCursor ()V
+	METHOD method_3322 openPauseScreen ()V
 	METHOD method_3323 setFullScreen ()V
 	METHOD method_3324 tick ()V
 	METHOD method_3325 isInServer ()Z

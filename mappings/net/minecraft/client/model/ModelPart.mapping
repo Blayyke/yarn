@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_11 net/minecraft/client/model/ModelPart
+	FIELD field_3949 textureWidth F
+	FIELD field_3950 textureHeight F
+	FIELD field_3951 pivotX F
+	FIELD field_3952 pivotY F
+	FIELD field_3953 pivotZ F
+	FIELD field_3954 pitch F
+	FIELD field_3955 yaw F
+	FIELD field_3956 roll F
+	FIELD field_3957 mirror Z
+	FIELD field_3958 visible Z
+	FIELD field_3960 cuboids Ljava/util/List;
+	FIELD field_3961 children Ljava/util/List;
+	FIELD field_3967 model Lnet/minecraft/class_35;
+	METHOD <init> (Lnet/minecraft/class_35;Ljava/lang/String;)V
+		ARG 1 model
+	METHOD method_3170 render (F)V
+	METHOD method_3171 setPivot (FFF)V
+	METHOD method_3172 addCuboid (FFFIII)Lnet/minecraft/class_11;
+	METHOD method_3173 addCuboid (FFFIIIF)V
+	METHOD method_3174 setTextureOffset (II)Lnet/minecraft/class_11;
+	METHOD method_3175 addBox (Ljava/lang/String;FFFIII)Lnet/minecraft/class_11;
+	METHOD method_3176 addChild (Lnet/minecraft/class_11;)V
+	METHOD method_3178 setTextureSize (II)Lnet/minecraft/class_11;

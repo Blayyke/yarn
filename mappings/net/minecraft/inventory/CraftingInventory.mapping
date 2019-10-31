@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_185 net/minecraft/inventory/CraftingInventory
+	FIELD field_672 contents [Lnet/minecraft/class_24;

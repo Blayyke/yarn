@@ -25,14 +25,15 @@ CLASS net/minecraft/class_264 net/minecraft/enchantment/Enchantment
 	FIELD field_2918 target Lnet/minecraft/class_805;
 	FIELD field_2919 rawName Ljava/lang/String;
 	FIELD field_2920 weight I
-	METHOD method_2383 getMaximumLevel ()I
-	METHOD method_2384 getMinimumPower (I)I
-	METHOD method_2380 getAttackDamage (ILnet/minecraft/class_133;)I
 	METHOD method_2375 getProtectionAmount (ILnet/minecraft/class_162;)I
 	METHOD method_2376 setRawName (Ljava/lang/String;)Lnet/minecraft/class_264;
-	METHOD method_2381 differs (Lnet/minecraft/class_264;)Z
 	METHOD method_2377 getWeight ()I
 	METHOD method_2378 getMinimumLevel ()I
 	METHOD method_2379 getDisplayNAme (I)Ljava/lang/String;
 		ARG 1 level
+	METHOD method_2380 getAttackDamage (ILnet/minecraft/class_133;)I
+	METHOD method_2381 differs (Lnet/minecraft/class_264;)Z
 	METHOD method_2382 getTranslationKey ()Ljava/lang/String;
+	METHOD method_2383 getMaximumLevel ()I
+	METHOD method_2384 getMinimumPower (I)I
+	METHOD method_2385 getMaximumPower (I)I

@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	FIELD field_2703 sleeping Z
 	FIELD field_2704 sleepPosition Lnet/minecraft/class_159;
+	FIELD field_2707 portalCooldown I
+	FIELD field_2708 inPortal Z
 	FIELD field_2710 abilities Lnet/minecraft/class_747;
 	FIELD field_2711 experienceLevel I
 	FIELD field_2712 experienceTotal I
@@ -17,6 +19,7 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	FIELD field_2728 score I
 	FIELD field_2731 handSwinging Z
 	FIELD field_2732 handSwingTicks I
+	FIELD field_2733 name Ljava/lang/String;
 	FIELD field_2734 dimension I
 	FIELD field_2735 experiencePickupDelay I
 	FIELD field_2738 cape Ljava/lang/String;
@@ -27,12 +30,14 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	METHOD method_2135 dropSelectedItem ()Lnet/minecraft/class_22;
 	METHOD method_2136 swingHand ()V
 	METHOD method_2137 updateEyeHeight ()V
+	METHOD method_2138 isPvpEnabled ()Z
 	METHOD method_2140 trySleep (III)Lnet/minecraft/class_519;
 		ARG 1 bedX
 		ARG 2 bedY
 		ARG 3 bedZ
 	METHOD method_2141 openBrewingStandScreen (Lnet/minecraft/class_442;)V
 	METHOD method_2142 openDispenserScreen (Lnet/minecraft/class_319;)V
+	METHOD method_2143 addChatMessage (Ljava/lang/String;)V
 	METHOD method_2144 updateCursorStack (Lnet/minecraft/class_24;)V
 	METHOD method_2146 openChestScreen (Lnet/minecraft/class_125;)V
 	METHOD method_2147 openFurnaceScreen (Lnet/minecraft/class_320;)V
@@ -64,6 +69,7 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	METHOD method_2180 canConsume (Z)Z
 	METHOD method_2181 addExhaustion (F)V
 	METHOD method_2183 copyFrom (Lnet/minecraft/class_75;)V
+		ARG 1 players
 	METHOD method_2185 interactWith (Lnet/minecraft/class_37;)V
 	METHOD method_2186 attack (Lnet/minecraft/class_37;)V
 	METHOD method_2187 addExperience (I)V

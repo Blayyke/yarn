@@ -5,3 +5,5 @@ CLASS net/minecraft/class_640 net/minecraft/server/network/ServerPlayNetworkHand
 	FIELD field_3311 keepAliveId I
 	FIELD field_3312 lastKeepAliveTime J
 	FIELD field_3313 random Ljava/util/Random;
+	METHOD method_2657 disconnect (Ljava/lang/String;)V
+	METHOD method_2659 sendPacket (Lnet/minecraft/class_87;)V
