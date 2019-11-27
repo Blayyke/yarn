@@ -68,6 +68,7 @@ def tempDir = file(".gradle/temp")
 def mergedJar = file("${minecraft_version}-merged.jar")
 def clientIntermediaryJar = new File(cacheFilesMinecraft, "${minecraft_version}-client-intermediary.jar")
 def serverIntermediaryJar = new File(cacheFilesMinecraft, "${minecraft_version}-server-intermediary.jar")
+def intermediaryJar = file("${minecraft_version}-intermediary.jar")
 def namedJar = file("${minecraft_version}-named.jar")
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
@@ -412,7 +413,7 @@ tasks.build.dependsOn "compressTiny"
 tasks.build.dependsOn "buildEnigma"
 tasks.build.dependsOn "tinyJar"
 
-/*task mapIntermediaryJar(dependsOn: [downloadMcLibs, build]) {
+task mapIntermediaryJar(dependsOn: [mergeJars, mergeTiny]) {
 	inputs.files downloadMcLibs.outputs.files.files
 	outputs.file(intermediaryJar)
 
@@ -423,10 +424,10 @@ tasks.build.dependsOn "tinyJar"
 
 	doLast {
 		logger.lifecycle(":mapping minecraft to intermdiary")
-		def tinyInput = new File("build/libs/yarn-tiny-${yarnVersion}.gz")
-		mapJar(intermediaryJar, clientJar, tinyInput, libraries, "official", "intermediary")
+
+		mapJar(intermediaryJar, clientJar, mergeTiny.fileOutput, libraries, "official", "intermediary")
 	}
-}*/
+}
 
 task mapNamedJar(dependsOn: [mergeJars, mergeTiny]) {
 	inputs.files downloadMcLibs.outputs.files.files
