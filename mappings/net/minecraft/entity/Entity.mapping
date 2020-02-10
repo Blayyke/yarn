@@ -34,6 +34,8 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	FIELD field_3567 prevPitch F
 	FIELD field_3568 boundingBox Lnet/minecraft/class_39;
 	FIELD field_3569 onGround Z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 entity
 	METHOD method_2771 isInLava ()Z
 	METHOD method_2772 onPlayerCollision (Lnet/minecraft/class_75;)V
 	METHOD method_2773 playStepSound (IIII)V
@@ -97,6 +99,8 @@ CLASS net/minecraft/class_37 net/minecraft/entity/Entity
 	METHOD method_2845 distanceTo (DDD)D
 	METHOD method_2846 inAir (I)V
 	METHOD method_2847 pushOutOfBlocks (DDD)Z
+	METHOD method_2848 getDataTracker ()Lnet/minecraft/class_357;
+	METHOD method_2849 updatePositionY ()V
 	METHOD method_2850 getEyeHeight ()F
 	METHOD method_2851 tick ()V
 	METHOD method_2852 readCustomDataFromTag (Lnet/minecraft/class_209;)V

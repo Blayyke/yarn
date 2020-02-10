@@ -10,6 +10,7 @@ CLASS net/minecraft/client/Minecraft
 	FIELD field_4148 running Z
 	FIELD field_4154 cursorLocked Z
 	FIELD field_4156 lastTickTime J
+	FIELD field_4157 isFullscreen Z
 	FIELD field_4161 resourceDownloadThread Lnet/minecraft/class_522;
 	FIELD field_4163 instance Lnet/minecraft/client/Minecraft;
 	FIELD field_4164 attackCooldown I
@@ -34,6 +35,7 @@ CLASS net/minecraft/client/Minecraft
 	METHOD method_3287 doItemPick ()V
 	METHOD method_3288 getVersion ()Ljava/lang/String;
 	METHOD method_3289 startSnooper ()V
+	METHOD method_3290 startGame ()V
 	METHOD method_3302 openScreen (Lnet/minecraft/class_65;)V
 	METHOD method_3308 handleProfilerKeyPress (I)V
 	METHOD method_3313 doItemUse (I)V
