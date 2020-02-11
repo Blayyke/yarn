@@ -1,4 +1,4 @@
-CLASS net/minecraft/client/Minecraft
+CLASS net/minecraft/client/Minecraft net/minecraft/client/MinecraftClient
 	CLASS class_992 TimerHackThread
 	CLASS class_993
 		FIELD field_4202 minecraft Lnet/minecraft/client/Minecraft;
