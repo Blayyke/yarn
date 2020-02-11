@@ -14,6 +14,8 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/MinecraftClient
 	FIELD field_4161 resourceDownloadThread Lnet/minecraft/class_522;
 	FIELD field_4163 instance Lnet/minecraft/client/Minecraft;
 	FIELD field_4164 attackCooldown I
+	FIELD field_4167 levelStorage Lnet/minecraft/class_90;
+	FIELD field_4173 dataFolder Ljava/io/File;
 	FIELD field_4174 openProfilerSection Ljava/lang/String;
 	FIELD field_4177 interactionManager Lnet/minecraft/class_252;
 	FIELD field_4178 windowScaledWidth I
@@ -23,6 +25,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/MinecraftClient
 	FIELD field_4182 player Lnet/minecraft/class_68;
 	FIELD field_4184 particleManager Lnet/minecraft/class_541;
 	FIELD field_4185 session Lnet/minecraft/class_49;
+	FIELD field_4187 canvas Ljava/awt/Canvas;
 	FIELD field_4189 paused Z
 	FIELD field_4190 textureManager Lnet/minecraft/class_18;
 	FIELD field_4191 textRenderer Lnet/minecraft/class_23;
@@ -36,8 +39,19 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/MinecraftClient
 	METHOD method_3288 getVersion ()Ljava/lang/String;
 	METHOD method_3289 startSnooper ()V
 	METHOD method_3290 startGame ()V
+	METHOD method_3293 drawQuad (IIIIII)V
+		ARG 1 posX
+		ARG 2 posY
+		ARG 3 x1
+		ARG 4 y1
+		ARG 5 x2
+		ARG 6 y2
+	METHOD method_3296 getDataFolder (Ljava/lang/String;)Ljava/io/File;
+		ARG 0 folderName
 	METHOD method_3302 openScreen (Lnet/minecraft/class_65;)V
+	METHOD method_3307 setDataFolder ()Ljava/io/File;
 	METHOD method_3308 handleProfilerKeyPress (I)V
+	METHOD method_3312 getLevelStorage ()Lnet/minecraft/class_90;
 	METHOD method_3313 doItemUse (I)V
 	METHOD method_3314 isCommand (Ljava/lang/String;)Z
 	METHOD method_3315 stop ()V
@@ -52,3 +66,4 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/MinecraftClient
 	METHOD method_3332 isFancyGraphicsEnabled ()Z
 	METHOD method_3333 isAmbientOcclusionEnabled ()Z
 	METHOD method_3334 isDebugEnabled ()Z
+	METHOD method_3336 getBlockInfo ()Lnet/minecraft/class_245;
