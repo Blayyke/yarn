@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_477 net/minecraft/structure/MetaPlantFeature
-	FIELD field_1352 id I
-	FIELD field_1353 meta I
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 meta

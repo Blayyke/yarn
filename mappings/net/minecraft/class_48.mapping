@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_48
-	METHOD method_1046 incrementStat (Lnet/minecraft/class_339;I)V
-	METHOD method_1048 (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
-		ARG 1 sessionId

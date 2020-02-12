@@ -13,6 +13,7 @@ CLASS net/minecraft/class_847 net/minecraft/network/listener/PacketListener
 	METHOD method_2939 onExperienceOrbSpawn (Lnet/minecraft/class_849;)V
 		ARG 1 packet
 	METHOD method_2941 onEntitySpawn (Lnet/minecraft/class_900;)V
+	METHOD method_2943 onHeldItemChange (Lnet/minecraft/class_912;)V
 	METHOD method_2944 onPaintingSpawn (Lnet/minecraft/class_913;)V
 		ARG 1 packet
 	METHOD method_2948 onGameStateChange (Lnet/minecraft/class_537;)V
