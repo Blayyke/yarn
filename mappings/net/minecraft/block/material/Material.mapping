@@ -29,10 +29,15 @@ CLASS net/minecraft/class_56 net/minecraft/block/material/Material
 	FIELD field_518 SNOW_BLOCK Lnet/minecraft/class_56;
 	FIELD field_519 CACTUS Lnet/minecraft/class_56;
 	FIELD field_520 CLAY Lnet/minecraft/class_56;
-	METHOD method_387 isSolid ()Z
+	METHOD <init> (Lnet/minecraft/class_149;)V
+		ARG 1 color
 	METHOD method_386 blocksMovement ()Z
+	METHOD method_387 isSolid ()Z
+	METHOD method_388 isVisible ()Z
 	METHOD method_389 isLiquid ()Z
 	METHOD method_390 requiresTool ()Lnet/minecraft/class_56;
 	METHOD method_391 burnable ()Lnet/minecraft/class_56;
+	METHOD method_392 isBurnable ()Z
+	METHOD method_393 getMaterial ()Lnet/minecraft/class_56;
 	METHOD method_396 doesRequireTool ()Z
 	METHOD method_398 lightPassesThrough ()Lnet/minecraft/class_56;

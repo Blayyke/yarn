@@ -15,6 +15,7 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	FIELD field_575 targetSelector Lnet/minecraft/class_160;
 	FIELD field_584 bodyYaw F
 	FIELD field_593 texture Ljava/lang/String;
+	FIELD field_596 entityType Ljava/lang/String;
 	FIELD field_604 health I
 	FIELD field_611 despawnCounter I
 	FIELD field_617 movementSpeed F
@@ -42,6 +43,7 @@ CLASS net/minecraft/class_133 net/minecraft/entity/LivingEntity
 	METHOD method_455 getDespawnCounter ()I
 	METHOD method_457 getTarget ()Lnet/minecraft/class_133;
 	METHOD method_467 getLookPitchSpeed ()I
+	METHOD method_468 isUsingBlock ()Z
 	METHOD method_469 cannotMove ()Z
 	METHOD method_471 isSleeping ()Z
 	METHOD method_475 getEffect (Lnet/minecraft/class_136;)Lnet/minecraft/class_137;
