@@ -67,7 +67,6 @@ CLASS net/minecraft/class_75 net/minecraft/entity/player/PlayerEntity
 	METHOD method_2177 dropItem (Lnet/minecraft/class_24;)Lnet/minecraft/class_22;
 	METHOD method_2178 consumeItem (Lnet/minecraft/class_24;I)V
 		ARG 1 item
-		ARG 2 integer
 	METHOD method_2179 isUsingEffectiveTool (Lnet/minecraft/class_38;)Z
 	METHOD method_2180 canConsume (Z)Z
 	METHOD method_2181 addExhaustion (F)V

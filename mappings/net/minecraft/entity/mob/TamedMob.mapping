@@ -2,6 +2,6 @@ CLASS net/minecraft/class_335 net/minecraft/entity/mob/TamedMob
 	METHOD method_1488 setOwner (Ljava/lang/String;)V
 	METHOD method_1490 setTamed (Z)V
 	METHOD method_1491 setSitting (Z)V
-		ARG 1 isSitting
+		ARG 1 sitting
 	METHOD method_1492 isTamed ()Z
 	METHOD method_1493 isSitting ()Z
