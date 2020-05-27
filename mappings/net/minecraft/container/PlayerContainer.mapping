@@ -5,5 +5,5 @@ CLASS net/minecraft/class_242 net/minecraft/container/PlayerContainer
 	FIELD field_814 craftingInv Lnet/minecraft/class_185;
 	FIELD field_815 resultInv Lnet/minecraft/class_125;
 	FIELD field_816 local Z
-	METHOD <init> (Laak;Z)V
+	METHOD <init> (Lnet/minecraft/class_324;Z)V
 		ARG 2 local

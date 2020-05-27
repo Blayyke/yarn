@@ -2,7 +2,8 @@ CLASS net/minecraft/class_7 net/minecraft/entity/ExperienceOrbEntity
 	FIELD field_1416 xpAge I
 	FIELD field_1418 health I
 	FIELD field_1419 amount I
-	METHOD <init> (Lxd;DDDI)V
+	METHOD <init> (Lnet/minecraft/class_26;DDDI)V
+		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z

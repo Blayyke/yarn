@@ -139,8 +139,6 @@ CLASS net/minecraft/class_38 net/minecraft/block/Block
 	FIELD field_3862 PLANKS Lnet/minecraft/class_38;
 	FIELD field_3863 SAPLING Lnet/minecraft/class_38;
 	FIELD field_3864 BEDROCK Lnet/minecraft/class_38;
-	METHOD <init> (ILacn;)V
-		ARG 1 id
 	METHOD <init> (ILnet/minecraft/class_56;)V
 		ARG 1 id
 	METHOD method_3031 randomDisplayTick (Lnet/minecraft/class_26;IIILjava/util/Random;)V

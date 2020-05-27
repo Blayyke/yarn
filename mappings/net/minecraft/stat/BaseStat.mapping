@@ -6,7 +6,7 @@ CLASS net/minecraft/class_339 net/minecraft/stat/BaseStat
 	FIELD field_1173 id I
 	FIELD field_1177 timeFormatter Lnet/minecraft/class_402;
 	FIELD field_1178 distanceFormatter Lnet/minecraft/class_402;
-	METHOD <init> (ILjava/lang/String;Lqt;)V
+	METHOD <init> (ILjava/lang/String;Lnet/minecraft/class_402;)V
 		ARG 1 id
 		ARG 2 name
 	METHOD method_974 getName ()Ljava/lang/String;

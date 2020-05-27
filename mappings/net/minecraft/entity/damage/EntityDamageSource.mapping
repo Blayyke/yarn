@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_642 net/minecraft/entity/damage/EntityDamageSource
 	FIELD field_1962 entity Lnet/minecraft/class_37;
-	METHOD <init> (Ljava/lang/String;Lnn;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_37;)V
 		ARG 1 name
